@@ -21,7 +21,7 @@ createApp({
             },
             {
                 text: "mangiare",
-                done: true,
+                done: false,
             },
             {
                 text: "studiare",
@@ -31,7 +31,7 @@ createApp({
         todo: {
             text:"",
             done: false,
-        }
+        },
     };
   },
   methods: {
