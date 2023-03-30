@@ -27,14 +27,17 @@ createApp({
                 text: "studiare",
                 done: true,
             }
-        
-        ]
-        
-        
+        ],
+        todo: {
+            text:"",
+            done: false,
+        }
     };
   },
   methods: {
-
+    addTodo(){
+        this.todos.push({...this.todo})
+    }
 
   }
 }).mount("#app");

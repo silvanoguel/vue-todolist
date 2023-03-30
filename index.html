@@ -10,6 +10,26 @@
   </head>
   <body>
     <div id="app">
+
+        <div class="container">
+
+            <h1>Vue TODOLIST</h1>
+
+            <ul class="todo-list">
+                <li v-for="task in todos">
+                    <div>{{ task.text }} </div>
+                </li>
+            </ul>
+
+            <div class="new-todo">
+                <label for="task"></label>
+                <input type="text" id="task" placeholder="write new task" v-model="todo.text">
+                <button class="add-btn" @click="addTodo">Add</button>
+            </div>
+
+        </div>
+
+
   
     </div>
 
